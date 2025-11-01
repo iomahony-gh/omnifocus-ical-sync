@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	 <key>RunAtLoad</key>
+    <true/>
+	<key>StartInterval</key>
+    <integer>300</integer>
 	<key>Disabled</key>
 	<false/>
 	<key>Label</key>
@@ -9,7 +13,7 @@
 	<key>ProgramArguments</key>
 	<array>
 	<string>osascript</string>
-	<string>/Users/ivanomahony/development/omnifocus-ical-sync.scpt</string>
+	<string>/Users/ivanomahony/development/omnifocus-ical-sync/omnifocus-ical-sync.scpt</string>
 	</array>
 	<key>StandardErrorPath</key>
 	<string>/Users/ivanomahony/tmp/omnifocus-ical-sync.err</string>
