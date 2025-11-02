@@ -4,14 +4,15 @@
 -- It requires you to have an iCal called 'OmniFocus'
 -- Any tasks you want to sync to your calendar need to have a 'CalSync' tag applied
 
--- ** HISTORY ** --
+-- ** History ** --
+-- -- Updated defaults
+
 
 -- ** USAGE ** --
 -- This script can be run from the command line with two optional parameters:
--- 1. The number of days to look ahead (default is 1)
--- 2. The number of days to look back (default is 1)
--- Example: `osascript omnifocus-ical-sync.scpt 15 5`
-
+-- 1. The number of days to look ahead (default is 5)
+-- 2. The number of days to look back (default is 5)
+-- Example: `osascript omnifocus-ical-sync.scpt 15 10`
 
 -- ******** --
 --  SCRIPT  --
@@ -27,8 +28,8 @@ on run argv
 		set daysAhead to item 1 of argv as integer
 		set daysBack to item 2 of argv as integer
 	else
-		set daysAhead to 1
-		set daysBack to 1
+		set daysAhead to 5
+		set daysBack to 5
 	end if
 
 	-- Create global variables
